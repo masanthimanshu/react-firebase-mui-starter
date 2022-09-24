@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { CssBaseline } from "@mui/material";
-import { Home } from "./pages";
+import { Home, Content } from "./pages";
 import "./style.css";
 
 export const Router = () => {
@@ -9,6 +9,7 @@ export const Router = () => {
       <CssBaseline />
       <Routes>
         <Route index element={<Home />} />
+        <Route path="content" element={<Content />} />
       </Routes>
     </>
   );
