@@ -1,14 +1,14 @@
 import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "@mui/material";
-import { Router } from "./Router-file";
-import { theme } from "./theme";
+import { Router } from "./Router";
+import { Theme } from "./Theme-file";
 
 const root = createRoot(document.getElementById("root"));
 
 root.render(
   <BrowserRouter>
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={Theme}>
       <Router />
     </ThemeProvider>
   </BrowserRouter>
